@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Calculator</title>
+  </head>
+
+  <body class="bg-light">
+    <div class="bg-warning">
+      <div class="container">
+        <h1 class="mt-3">Calculator</h1>
+      </div>
+      <div class="container bg-warning">
+        <div class="row text-center justify-content-center">
+          <div class="col-md-6">
+            <form name="calculator">
+              <input type="text" name="display" class="form-control mb-3" readonly>
+              <input type="button" name="" value="1" onclick="click1()" class="btn btn-dark bsw">
+              <input type="button" name="" value="2" onclick="click2()" class="btn btn-dark bsw">
+              <input type="button" name="" value="3" onclick="click3()" class="btn btn-dark bsw">
+              <input type="button" name="" value="/" onclick="clickdiv()" class="btn btn-dark bsw">
+              <input type="button" name="" value="4" onclick="click4()" class="btn btn-dark bsw">
+              <input type="button" name="" value="5" onclick="click5()" class="btn btn-dark bsw">
+              <input type="button" name="" value="6" onclick="click6()" class="btn btn-dark bsw">
+              <input type="button" name="" value="-" onclick="clicksub()" class="btn btn-dark bsw">
+              <input type="button" name="" value="7" onclick="click7()" class="btn btn-dark bsw">
+              <input type="button" name="" value="8" onclick="click8()" class="btn btn-dark bsw">
+              <input type="button" name="" value="9" onclick="click9()" class="btn btn-dark bsw">
+              <input type="button" name="" value="+" onclick="clickadd()" class="btn btn-dark bsw">
+              <input type="button" name="" value="AC" onclick="clickac()" class="btn btn-dark bsw">
+              <input type="button" name="" value="0" onclick="click0()" class="btn btn-dark bsw">
+              <input type="button" name="" value="*" onclick="clickmulti()" class="btn btn-dark bsw">          
+              <input type="button" name="" value="=" onclick="clickeql()" class="btn btn-primary bsw">            
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function click1(){
+        document.calculator.display.value+=1;
+      }
+      function click2(){
+        document.calculator.display.value+=2;
+      }
+      function click3(){
+        document.calculator.display.value+=3;
+      }
+      function click4(){
+        document.calculator.display.value+=4;
+      }
+      function click5(){
+        document.calculator.display.value+=5;
+      }
+      function click6(){
+        document.calculator.display.value+=6;
+      }
+      function click7(){
+        document.calculator.display.value+=7;
+      }
+      function click8(){
+        document.calculator.display.value+=8;
+      }
+      function click9(){
+        document.calculator.display.value+=9;
+      }
+      function click0(){
+        document.calculator.display.value+=0;
+      }
+      function clickadd(){
+        document.calculator.display.value+="+";
+      }
+      function clicksub(){
+        document.calculator.display.value+="-";
+      }
+      function clickmulti(){
+        document.calculator.display.value+="*";
+      }
+      function clickdiv(){
+        document.calculator.display.value+="/";
+      }
+      function clickeql(){
+        var Display = eval(document.calculator.display.value);
+        document.calculator.display.value=Display;
+      }
+      function clickac(){
+        document.calculator.display.value="";
+      }
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
