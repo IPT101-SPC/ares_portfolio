@@ -1,6 +1,10 @@
+  body {
+      position: relative; 
+  }
+
 .brand-text {
 	font-family: 'Acme', sans-serif;
-	font-size: 30px;
+	font-size: 25px;
 }
 
 .head-text {
@@ -20,4 +24,10 @@
 	font-family: 'Indie Flower', cursive;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 20px;
+}
+
+.title {
+	font-family: 'Indie Flower', cursive;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 35px;
 }
